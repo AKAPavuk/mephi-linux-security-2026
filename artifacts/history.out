@@ -1,0 +1,24 @@
+    1  reboot
+    2  sudo su root
+    3  cd ~
+    4  clear
+    5  sudo su root
+    6  su root
+    7  sudo su root
+    8  su root
+    9  su -
+   10  exit
+   11  ps -eo pid,ruid,euid,cmd --no-headers | awk '$2 != 0 && $3 == 0'
+   12  watch -n 0.5 "ps -eo pid,ruid,euid,cmd --no-headers | awk '$2 != 0 && $3 == 0'"
+   13  clear
+   14  exit
+   15  su -
+   16  clear
+   17  cp /bin/cat /home/user1/mycat
+   18  sudo chown root:root /home/user1/mycat
+   19  clear
+   20  sudo chown root:root /home/user1/mycat
+   21  exit
+   22  cat /root/suid-demo.txt
+   23  exit
+   24  history > ~/history.out

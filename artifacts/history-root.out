@@ -1,0 +1,52 @@
+    1  poweroff
+    2  clear
+    3  whoami
+    4  ls -ll
+    5  cd ~
+    6  cd /etc/home
+    7  cd /etc
+    8  ls -ll
+    9  cd ~
+   10  clear
+   11  reboot
+   12  clear
+   13  reboot
+   14  clear
+   15  groupadd -f students
+   16  getent group students
+   17  useradd -m -u 1234 -G students -s /bin/bash user1
+   18  passwd user1
+   19  su -
+   20  clar
+   21  clear
+   22  cd ~
+   23  su user1
+   24  su user1
+   25  cd ~
+   26  ls -ll
+   27  cat anaconda-ks.cfg
+   28  clear
+   29  reboot
+   30  exit
+   31  clear
+   32  chage -m 0 -M 90 -W 14 user1
+   33  chage -M 90 -W 14 user1
+   34  chage -l user1
+   35  getent group students
+   36  id -u user1
+   37  id user1
+   38  su - user1
+   39  poweroff
+   40  clear
+   41  sudo find / -xdev -type f -perm /4000 -ls 2>/dev/null
+   42  ps -eo pid,ruid,euid,cmd --no-headers | awk '$2 != 0 && $3 == 0'
+   43  sudo passwd user1
+   44  su -
+   45  clear
+   46  reboot
+   47  clear
+   48  su user1
+   49  clear
+   50  sudo passwd user1
+   51  history > ~/home/user1/history-root.out
+   52  history > /home/user1/history-root.out

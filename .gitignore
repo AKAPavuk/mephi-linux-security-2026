@@ -1,0 +1,21 @@
+#  VMware virtual machine files
+*.vmdk
+*.vmx
+*.vmxf
+*.vmsd
+*.vmsn
+*.vmem
+*.nvram
+*.ova
+*.ovf
+
+# Private keys and credentials
+*.pem
+*.key
+id_rsa
+id_ed25519
+.env
+
+# Temporary files
+*.tpm
+*.log
